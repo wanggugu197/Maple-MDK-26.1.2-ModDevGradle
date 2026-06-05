@@ -1,4 +1,6 @@
-package com.example.examplemod;
+package com.example.client;
+
+import com.example.ExampleMod;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
@@ -10,22 +12,22 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
-// This class will not load on dedicated servers. Accessing client side code from here is safe.
+// 此类不会在专用服务器上加载。从此处访问客户端代码是安全的。
 @Mod(value = ExampleMod.MODID, dist = Dist.CLIENT)
-// You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
+// 可以使用 EventBusSubscriber 自动注册类中所有带有 @SubscribeEvent 注解的静态方法
 @EventBusSubscriber(modid = ExampleMod.MODID, value = Dist.CLIENT)
 public class ExampleModClient {
+
     public ExampleModClient(ModContainer container) {
-        // Allows NeoForge to create a config screen for this mod's configs.
-        // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
-        // Do not forget to add translations for your config options to the en_us.json file.
+        // 允许 NeoForge 为此模组的配置创建配置界面。
+        // 配置界面可通过以下方式访问：模组界面 > 点击你的模组 > 点击配置。
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        ExampleMod.LOGGER.info("HELLO FROM CLIENT SETUP");
-        ExampleMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        // 客户端设置代码
+        ExampleMod.LOGGER.info("来自客户端设置的问候");
+        ExampleMod.LOGGER.info("MINECRAFT 名称 >> {}", Minecraft.getInstance().getUser().getName());
     }
 }

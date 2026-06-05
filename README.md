@@ -1,4 +1,33 @@
 
+# Maple-MDK-26.1.2-ModDevGradle
+
+本库基于 NeoForge MDK 修改，旨在简化模组开发流程，提供更好的开发体验。
+
+## 修改内容
+
+- **Gradle 配置优化**：整合版本管理，统一依赖配置
+- **依赖更新**：适配 Minecraft 26.1.2 和 NeoForge 26.1.2.71+
+- **配置系统增强**：提供完整的配置示例和注释
+- **代码结构优化**：清晰的目录结构和代码组织
+
+## 开发环境要求
+
+- JDK 25 或更高版本
+- IntelliJ IDEA 或 Eclipse
+- Gradle 9.x
+
+## 鸣谢
+
+本项目参考了以下优秀开源项目：
+
+- [GregTechCEu](https://github.com/GregTechCEu) - 模组开发框架参考
+- [GregTech-Odyssey](https://github.com/GregTech-Odyssey) - 模组开发框架参考
+- [Creators-of-Create](https://github.com/Creators-of-Create) - Gradle 配置参考
+
+感谢这些项目的开发者们分享他们的知识和代码！
+
+---
+
 Installation information
 =======
 

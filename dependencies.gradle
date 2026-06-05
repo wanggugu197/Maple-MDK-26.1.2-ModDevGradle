@@ -1,0 +1,8 @@
+dependencies {
+
+    implementation(forge.registrylib)
+    implementation(forge.mapleutillib)
+
+    compileOnly(forge.jeiApi)
+    localRuntime(forge.jei)
+}
