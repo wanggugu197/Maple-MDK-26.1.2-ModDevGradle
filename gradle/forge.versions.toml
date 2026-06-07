@@ -1,6 +1,6 @@
 [versions]
-registryLib = "8.0.14"
-mapleutillib = "0.0.2"
+registryLib = "[8.0.14,)"
+mapleutillib = "[0.0.3,)"
 
 jei = "29.6.2.31"
 ftbChunks = "2101.1.11"

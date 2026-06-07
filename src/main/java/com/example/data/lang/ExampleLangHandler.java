@@ -7,7 +7,7 @@ import static com.example.ExampleMod.REGISTRY;
 public class ExampleLangHandler {
 
     public static void addLang(String key, String cn, String en) {
-        REGISTRY.lang(ModLangProvider.LANG_EN_US, key, en);
+        REGISTRY.lang(key, en);
         REGISTRY.lang(ModLangProvider.LANG_ZH_CN, key, cn);
     }
 
