@@ -5,4 +5,5 @@ dependencies {
 
     compileOnly(forge.jeiApi)
     localRuntime(forge.jei)
+    localRuntime(forge.jade)
 }

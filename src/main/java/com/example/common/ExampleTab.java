@@ -14,7 +14,7 @@ public class ExampleTab {
     public static void init() {}
 
     // 创造模式标签注册
-    public static final RegistryEntry<CreativeModeTab, CreativeModeTab> TAB_GANM = REGISTRY
+    public static final RegistryEntry<CreativeModeTab, CreativeModeTab> TAB_EXAMPEL = REGISTRY
             .creativeTab("example_tab", "Example Tab", Map.of("zh_cn", "示例标签"),
                     builder -> builder.icon(NXAMPLE_ITEM::asStack));
 }
