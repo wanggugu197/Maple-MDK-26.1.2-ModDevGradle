@@ -3,12 +3,13 @@ package com.example;
 import com.example.common.CommonInit;
 import com.example.config.ExampleModConfig;
 
-import com.mapleutillib.api.registry.ModRegistryCore;
+import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 
+import com.mapleutillib.api.registry.ModRegistryCore;
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
 
@@ -38,5 +39,9 @@ public class ExampleMod {
         modContainer.registerConfig(ModConfig.Type.COMMON, ExampleModConfig.SPEC);
         // 初始化内容
         CommonInit.init(modEventBus);
+    }
+
+    public static Identifier id(String path) {
+        return Identifier.fromNamespaceAndPath(MODID, path);
     }
 }

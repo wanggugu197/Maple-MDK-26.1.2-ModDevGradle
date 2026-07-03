@@ -1,6 +1,7 @@
 package com.example.common;
 
 import com.example.data.lang.ExampleLangHandler;
+
 import net.neoforged.bus.api.IEventBus;
 
 /**
@@ -12,8 +13,16 @@ public class CommonInit {
 
     public static void init(IEventBus modBus) {
         CommonInit.modBus = modBus;
+
+        ExampleDataComponent.init();
+
+        ExampleBlockTags.init();
+        ExampleItemTags.init();
+
         ExampleTab.init();
         ExampleRegistration.init();
         ExampleLangHandler.init();
+
+        NeoForgeCommonEvent.init();
     }
 }

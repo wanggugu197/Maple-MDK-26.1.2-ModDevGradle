@@ -1,10 +1,10 @@
 package com.example.common;
 
-import com.gto.registrylib.util.entry.BlockEntry;
 import net.minecraft.world.item.Item;
-
-import com.gto.registrylib.util.entry.ItemEntry;
 import net.minecraft.world.level.block.Block;
+
+import com.gto.registrylib.util.entry.BlockEntry;
+import com.gto.registrylib.util.entry.ItemEntry;
 
 import static com.example.ExampleMod.REGISTRY;
 import static com.example.common.ExampleTab.TAB_EXAMPEL;
