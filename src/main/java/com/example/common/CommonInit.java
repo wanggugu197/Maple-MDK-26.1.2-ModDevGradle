@@ -21,6 +21,7 @@ public class CommonInit {
 
         ExampleTab.init();
         ExampleRegistration.init();
+        ExampleRecipe.init();
         ExampleLangHandler.init();
 
         NeoForgeCommonEvent.init();
